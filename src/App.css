@@ -1,0 +1,66 @@
+:root{
+  --theme-primary-color:#090c27d5;
+  --theme-secondary-color:#9699b3c2;
+  --theme-background-color:#FFF;
+}
+
+.placeholder {
+  text-align: center;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: auto;
+}
+
+.editing .placeholder.empty  {
+  background: repeating-linear-gradient(
+    55deg,
+    transparent,
+    transparent 5.5px,
+    black 6px
+  );
+}
+
+.editing .placeholder .selected {
+  outline:4px dashed var(--theme-secondary-color);
+}
+
+.showPadding {
+  background:
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%),
+    linear-gradient(to bottom,
+      rgba(240, 40, 40, 1) 0%,
+      rgba(240, 40, 40, 1) 100%);
+  background-clip: content-box, padding-box;
+}
+
+.topnavbar {
+  background-color: var(--theme-primary-color) !important;
+}
+
+@keyframes highlight {
+  0% {
+    background: #ffff99; /* lovely yellow colour */
+  }
+  99% {
+    background: none;
+  }
+}
+
+.selectedInEditor { 
+   animation: highlight 1s;
+}
+
+#appBar {
+  position: absolute;
+  z-index: 9999;
+  min-width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+#appBar .btn {
+  margin-left: 5px;
+}
+

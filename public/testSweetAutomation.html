@@ -1,0 +1,24 @@
+<html>
+
+<body>
+  <h1>test</h1>
+  <script type="text/javascript">
+
+    fetch('http://localhost/SAApi/FlowBox/5/Result', {
+      method: 'GET',
+      headers: new Headers({
+        ApiKey: 'b3891913-d078-4a4b-b3b7-91fb330ce7bf',
+        Accept: 'application/json'
+      })
+    })
+      .then((e) => console.log(e))
+      .then(res => res.json())
+      .then(json => {
+        console.log(json);
+      })
+      .catch(error => console.log(error));
+
+  </script>
+</body>
+
+</html>

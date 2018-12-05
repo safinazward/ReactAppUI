@@ -1,0 +1,51 @@
+
+
+#editor #editorPanel {
+  position: fixed;
+  top: 0px;
+  min-height: 100vh;
+  width: 250px;
+  background: black;
+  transition: all 0.2s;
+  color: white;
+  z-index: 9999;
+}
+
+#editorPanel.collapse.show {
+  right: 0px !important;
+}
+
+#editorPanel #configPathList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#editorPanel #configPathList li {
+  display: inline;
+  cursor: pointer;
+}
+
+#editor {
+  z-index: 9999;
+}
+
+#editor #editorToolbar {
+  position: fixed;
+  top: 0px;
+  min-height: 30px;
+  min-width: 30px;
+  z-index: 9999;
+}
+
+#editor #editorToolbar .btn {
+  display: none;
+}
+
+#editor:hover #editorToolbar .btn {
+  display: block;
+}
+
+#editor #editorToolbar:hover .btn {
+  display: block;
+}

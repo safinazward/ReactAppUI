@@ -1,0 +1,34 @@
+.react-grid-item.cssTransforms {
+  transition-property: none;
+}
+.animated .react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+
+.editing .react-grid-item {
+  border: 1px dashed black;
+}
+
+.react-grid-item {
+  overflow: hidden;
+}
+
+.react-grid-layout {
+  min-height: 100%;
+  background-color: #ebebeb;
+}
+
+.editing .react-grid-item {
+  overflow: auto;
+}
+
+.react-grid-item .gridItemToolbar {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  right: 0px;
+}
+
+.editing .react-grid-item .gridItemToolbar {
+  display: block;
+}
